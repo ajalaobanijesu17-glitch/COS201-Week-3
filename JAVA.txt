@@ -1,0 +1,83 @@
+import java.util.Scanner;
+
+public class SimpleCalculator {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        double num1 = input.nextDouble();
+
+        System.out.print("Enter second number: ");
+        double num2 = input.nextDouble();
+
+        System.out.println("Addition: " + (num1 + num2));
+        System.out.println("Subtraction: " + (num1 - num2));
+        System.out.println("Multiplication: " + (num1 * num2));
+
+        if (num2 != 0) {
+            System.out.println("Division: " + (num1 / num2));
+        } else {
+            System.out.println("Division by zero is not allowed.");
+        }
+
+        input.close();
+    }
+}
+
+
+
+
+
+import java.util.Scanner;
+
+public class AverageCalculator {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        double num1 = input.nextDouble();
+
+        System.out.print("Enter second number: ");
+        double num2 = input.nextDouble();
+
+        System.out.print("Enter third number: ");
+        double num3 = input.nextDouble();
+
+        double average = (num1 + num2 + num3) / 3;
+
+        System.out.println("The average is: " + average);
+
+        input.close();
+    }
+}
+
+
+
+
+
+
+import java.util.Scanner;
+
+public class ItemCost {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter item name: ");
+        String itemName = input.nextLine();
+
+        System.out.print("Enter item price: ");
+        double price = input.nextDouble();
+
+        System.out.print("Enter quantity: ");
+        int quantity = input.nextInt();
+
+        double totalCost = price * quantity;
+
+        System.out.println("Item: " + itemName);
+        System.out.println("Price: " + price);
+        System.out.println("Quantity: " + quantity);
+        System.out.println("Total Cost: " + totalCost);
+
+        input.close();
+    }
+}
